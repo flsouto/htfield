@@ -1,4 +1,16 @@
 {
+    "name": "flsouto/htfield",
+    "description": "Base class for implementing all kinds of form fields, both widgets and non-widgets",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Fabio Souto",
+            "email": "fabiolimasouto@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "keywords"  : ["forms","html","fields"],
+
     "require": {
         "flsouto/param": "^1.0",
         "flsouto/htattrs": "^1.0"
@@ -8,4 +20,5 @@
     		"FlSouto\\" : "."
     	}
     }
+
 }
