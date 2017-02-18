@@ -27,6 +27,7 @@ abstract class HtField{
 	function context($context){
 		$this->context = $context;
 		$this->param->context($context);
+		$this->result = null;
 		return $this;
 	}
 
