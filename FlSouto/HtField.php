@@ -52,16 +52,7 @@ abstract class HtField{
 	}
 
 	function attrs(array $attrs){
-		$store = $this->attrs;
-		foreach($attrs as $k=>$v){
-			if(is_array($v)){
-				foreach($v as $k2=>$v2){
-					$store[$k][$k2] = $v2;
-				}
-			} else {
-				$store[$k] = $v;
-			}
-		}
+		$this->attrs->merge($attrs);
 		return $this;
 	}
 
