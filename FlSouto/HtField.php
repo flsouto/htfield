@@ -12,7 +12,7 @@ abstract class HtField{
 	function __construct($name){
 		$this->param = new Param($name);
 		$this->attrs = new HtAttrs;
-		$this->attrs['id'] = uniqid();
+		$this->attrs['id'] = 'field_'.uniqid();
 		$this->attrs['name'] = $name;
 	}
 
